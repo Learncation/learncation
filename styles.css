@@ -378,3 +378,119 @@ h1{
 }
 
 html{scroll-behavior:smooth}
+
+/* --- Alias styles to match current HTML class names --- */
+
+/* Hero layout */
+.hero-grid{
+  display:grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap:36px;
+  align-items:center;
+}
+
+.badge{
+  display:inline-flex;
+  align-items:center;
+  padding:10px 14px;
+  border:1px solid var(--border);
+  background:rgba(255,255,255,0.06);
+  border-radius:999px;
+  font-size:14px;
+  color:var(--muted);
+}
+
+.lead{
+  margin:0 0 20px;
+  color:var(--muted);
+  font-size: clamp(16px, 1.6vw, 18px);
+}
+
+.hero-cta{display:flex; gap:12px; flex-wrap:wrap}
+
+.hero-meta{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  margin-top:22px;
+}
+
+.meta-item{
+  padding:10px 12px;
+  border:1px solid var(--border);
+  background:rgba(255,255,255,0.05);
+  border-radius:999px;
+}
+
+.meta-label{font-size:12px; color:var(--muted2); margin-bottom:2px}
+.meta-value{font-size:13px; color:var(--muted); font-weight:600}
+
+/* Hero photos */
+.hero-visual{position:relative}
+
+.photo{
+  border-radius: var(--radius-lg);
+  border:1px solid var(--border);
+  background: linear-gradient(140deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03));
+  box-shadow: var(--shadow);
+  overflow:hidden;
+}
+
+.photo img{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.photo-hero{aspect-ratio: 4 / 3}
+
+.photo-float{
+  position:absolute;
+  width:56%;
+  right:-6%;
+  bottom:-18%;
+  aspect-ratio: 4 / 3;
+  border-radius: var(--radius-lg);
+}
+
+/* Sections */
+.section-header{
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+  gap:16px;
+  margin-bottom:22px;
+}
+
+.section-header h2{margin:0; font-size:28px; letter-spacing:-0.01em}
+.section-header p{margin:0; color:var(--muted); max-width:56ch}
+
+.cards-grid{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:14px;
+}
+
+/* Timeline */
+.timeline-item{
+  display:grid;
+  grid-template-columns: 92px 14px 1fr;
+  gap:14px;
+  padding:16px 16px;
+  border:1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: rgba(255,255,255,0.05);
+}
+
+.timeline-item .time{color:rgba(255,255,255,0.78); font-weight:700}
+.timeline-item .content h3{margin:0 0 2px; font-size:14px}
+.timeline-item .content p{margin:0; color:var(--muted); font-size:14px}
+
+/* Responsive */
+@media (max-width: 920px){
+  .hero-grid{grid-template-columns:1fr;}
+  .cards-grid{grid-template-columns:1fr;}
+  .photo-float{position:static; width:100%; margin-top:12px;}
+  .timeline-item{grid-template-columns: 92px 14px 1fr;}
+}
