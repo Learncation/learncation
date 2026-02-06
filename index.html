@@ -3,157 +3,337 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Learncation - Seoul Evening Experience</title>
-  <meta name="description" content="Premium small-group Korean culture experiences. Market, cook, and dance through real Seoul in one evening." />
+  <title>Learncation Korea - Premium K-Culture Day Experience</title>
+  <meta name="description" content="Curated K-culture experiences in Seoul. Cook iconic Korean dishes, then learn K-pop dance at SM Universe." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
   <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
-  <header class="nav">
-    <div class="container nav-inner">
-      <div class="brand">Learncation</div>
-      <nav class="nav-links">
-        <a href="#experience">Experience</a>
-        <a href="#faq">FAQ</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <main>
-    <section class="hero">
-      <div class="container hero-inner">
-        <div class="hero-text">
-          <h1>Experience Seoul in one unforgettable evening.</h1>
-          <p class="subhead">
-            A premium small-group journey from local groceries to Korean cooking, ending with a K-pop dance class at SM Universe.
-            Fully guided, English-friendly, capped at 5 guests.
-          </p>
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" aria-label="Hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <div class="badge">Premium K-Culture Experience</div>
+            <h1>Cook Korean dishes and groove to K-pop</h1>
+            <p class="lead">
+              Prepare iconic Korean dishes in a hands-on session and learn beginner-friendly K-pop dance moves at SM Universe.
+            </p>
 
-          <div class="cta-row">
-            <a class="btn primary" href="#contact">Book now</a>
-            <a class="btn secondary" href="#experience">See details</a>
+            <div class="hero-cta">
+              <a class="btn btn-primary" href="#booking">Book now</a>
+              <a class="btn btn-ghost" href="#overview">View experience</a>
+            </div>
+
+            <div class="hero-meta" role="list">
+              <div class="meta-item" role="listitem">
+                <div class="meta-label">Duration</div>
+                <div class="meta-value">5 hours</div>
+              </div>
+              <div class="meta-item" role="listitem">
+                <div class="meta-label">Group size</div>
+                <div class="meta-value">Up to 5 guests</div>
+              </div>
+              <div class="meta-item" role="listitem">
+                <div class="meta-label">Location</div>
+                <div class="meta-value">Seoul - SM Universe area</div>
+              </div>
+            </div>
           </div>
 
-          <div class="badges">
-            <span class="badge">5 hours</span>
-            <span class="badge">Min 4 - Max 5</span>
-            <span class="badge">All ingredients included</span>
-            <span class="badge">Beginner-friendly</span>
-          </div>
-        </div>
-
-        <div class="hero-card">
-          <div class="card">
-            <div class="card-title">Seoul Evening Experience</div>
-            <div class="card-line"><strong>Time:</strong> 17:00 - 22:00</div>
-            <div class="card-line"><strong>Flow:</strong> Market - Cook - K-pop</div>
-            <div class="card-line"><strong>Meet:</strong> Daecheong Station</div>
-            <div class="card-line"><strong>Includes:</strong> Cooking + transport + dance class</div>
-            <div class="card-note">Perfect for travellers with limited time.</div>
+          <div class="hero-visual" aria-hidden="true">
+            <div class="photo photo-hero">
+              <img src="assets/hero-placeholder.svg" alt="" />
+            </div>
+            <div class="photo photo-float">
+              <img src="assets/secondary-placeholder.svg" alt="" />
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="experience" class="section">
+    <!-- Overview -->
+    <section id="overview" class="section" aria-label="Experience overview">
       <div class="container">
-        <h2>What you’ll do</h2>
+        <header class="section-header">
+          <h2>The experience</h2>
+          <p>Two premium activities in one unforgettable day in Seoul.</p>
+        </header>
 
-        <div class="grid3">
-          <div class="tile">
-            <h3>1) Grocery mission</h3>
-            <p>Meet near Daecheong Station and shop for ingredients like a local. Quick briefing and guided purchase list.</p>
-          </div>
-          <div class="tile">
-            <h3>2) Korean cooking class</h3>
-            <p>Cook together in a studio and enjoy what you make. Menu: gimbap + pajeon. Photos included.</p>
-          </div>
-          <div class="tile">
-            <h3>3) K-pop dance class</h3>
-            <p>End the night at SM Universe with a beginner-friendly choreography class in a real training space.</p>
-          </div>
+        <div class="cards-grid">
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">🍳</div>
+            <h3>Korean Cooking Class</h3>
+            <p>Learn to make gimbap and pajeon with English instruction in a local studio near SM Universe.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">🕺</div>
+            <h3>K-pop Dance Class</h3>
+            <p>Train like an idol - beginner-friendly choreography to NCT WISH "Steady" in a real studio setting.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">🚌</div>
+            <h3>Transportation Included</h3>
+            <p>We move together by local city bus between locations - simple, safe, and coordinated by your host.</p>
+          </article>
         </div>
+      </div>
+    </section>
 
-        <div class="two-col">
-          <div class="panel">
-            <h3>What’s included</h3>
-            <ul>
-              <li>Guided grocery mission</li>
-              <li>Cooking class + all ingredients</li>
-              <li>Bus transfer (studio - SM Universe)</li>
-              <li>90-min K-pop dance class</li>
-              <li>English-speaking guide</li>
+    <!-- Timeline -->
+    <section id="itinerary" class="section section-muted" aria-label="Itinerary">
+      <div class="container">
+        <header class="section-header">
+          <h2>Your itinerary</h2>
+          <p>A clear schedule so guests know exactly what to expect.</p>
+        </header>
+
+        <ol class="timeline">
+          <li class="timeline-item">
+            <div class="time">17:00</div>
+            <div class="dot" aria-hidden="true"></div>
+            <div class="content">
+              <h3>Welcome and Local Grocery Stop</h3>
+              <p>Meet at Daecheong Station for a quick welcome, then pick up ingredients at a nearby mart for our cooking class.</p>
+            </div>
+          </li>
+
+          <li class="timeline-item">
+            <div class="time">17:30 - 20:00</div>
+            <div class="dot" aria-hidden="true"></div>
+            <div class="content">
+              <h3>Korean Cooking Class - Gimbap and Pajeon</h3>
+              <p>Hands-on cooking in a local studio near SM Universe. Ingredients included, English instruction, and time to enjoy what you make.</p>
+            </div>
+          </li>
+
+          <li class="timeline-item">
+            <div class="time">20:00 - 20:30</div>
+            <div class="dot" aria-hidden="true"></div>
+            <div class="content">
+              <h3>Group Transfer by City Bus</h3>
+              <p>Travel together with your guide - approx. 20 minutes from the cooking studio to SM Universe.</p>
+            </div>
+          </li>
+
+          <li class="timeline-item">
+            <div class="time">20:30 - 22:00</div>
+            <div class="dot" aria-hidden="true"></div>
+            <div class="content">
+              <h3>SM Universe K-pop Dance Class</h3>
+              <p>90-minute beginner-friendly dance class to NCT WISH "Steady" in a real K-pop training studio. Personal videos may be allowed onsite.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Why special -->
+    <section class="section" aria-label="Why it is special">
+      <div class="container">
+        <header class="section-header">
+          <h2>Why this is special</h2>
+          <p>Designed for visitors who want the real Seoul - without the guesswork.</p>
+        </header>
+
+        <div class="feature-grid">
+          <article class="feature">
+            <div class="feature-head">
+              <span class="feature-icon" aria-hidden="true">⭐</span>
+              <h3>SM Universe Location</h3>
+            </div>
+            <p>Dance in a legitimate K-pop training environment. This is not a tourist set - it is a real studio setting.</p>
+          </article>
+
+          <article class="feature">
+            <div class="feature-head">
+              <span class="feature-icon" aria-hidden="true">👥</span>
+              <h3>Small Group Experience</h3>
+            </div>
+            <p>Limited to 5 guests for a premium, personal, and well paced experience.</p>
+          </article>
+
+          <article class="feature">
+            <div class="feature-head">
+              <span class="feature-icon" aria-hidden="true">🎯</span>
+              <h3>Curated and Guided</h3>
+            </div>
+            <p>Hosted by experienced programme coordinators and local partners, with clear logistics and support.</p>
+          </article>
+
+          <article class="feature">
+            <div class="feature-head">
+              <span class="feature-icon" aria-hidden="true">📸</span>
+              <h3>Photo Friendly Moments</h3>
+            </div>
+            <p>We will help capture memories during the cooking portion, plus time for short personal videos where permitted.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking options -->
+    <section id="booking" class="section section-muted" aria-label="Booking options">
+      <div class="container">
+        <header class="section-header">
+          <h2>Booking options</h2>
+          <p>Choose how you would like to join. Private groups can request custom dates.</p>
+        </header>
+
+        <div class="booking-grid">
+          <article class="booking-card">
+            <div class="booking-top">
+              <h3>Individual Booking</h3>
+              <div class="price">From ₩230,000</div>
+              <div class="sub">Per guest</div>
+            </div>
+            <ul class="bullets">
+              <li>Join a scheduled session</li>
+              <li>Small group - max 5 guests</li>
+              <li>Instant confirmation on platform</li>
             </ul>
-          </div>
+            <a class="btn btn-primary w-full" href="#contact" data-booking-type="Individual">Request a spot</a>
+          </article>
 
-          <div class="panel">
-            <h3>Why it’s special</h3>
-            <ul>
-              <li>Three premium activities in one smooth evening</li>
-              <li>Small group (max 5) so it feels personal</li>
-              <li>No long travel across the city</li>
-              <li>Designed for first-time visitors and K-culture lovers</li>
+          <article class="booking-card booking-card-highlight">
+            <div class="booking-top">
+              <h3>Private Group</h3>
+              <div class="price">Custom pricing</div>
+              <div class="sub">2-5 guests</div>
+            </div>
+            <ul class="bullets">
+              <li>Pick your preferred date and time</li>
+              <li>Ideal for friends, couples, or teams</li>
+              <li>Optional customisations available</li>
             </ul>
+            <a class="btn btn-dark w-full" href="#contact" data-booking-type="Private group">Enquire for a group</a>
+          </article>
+
+          <article class="booking-card">
+            <div class="booking-top">
+              <h3>Book on Airbnb</h3>
+              <div class="price">Platform checkout</div>
+              <div class="sub">Secure booking</div>
+            </div>
+            <ul class="bullets">
+              <li>Reviews and verified profiles</li>
+              <li>Clear cancellation policies</li>
+              <li>Simple payments in your currency</li>
+            </ul>
+            <a class="btn btn-ghost w-full" href="https://www.airbnb.com/experiences" target="_blank" rel="noopener noreferrer">Open Airbnb</a>
+          </article>
+        </div>
+
+        <p class="note">Tip: If you list on multiple platforms, keep capacity synced manually to avoid overbooking.</p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section" aria-label="Contact form">
+      <div class="container">
+        <div class="contact-card">
+          <div class="contact-copy">
+            <h2>Contact us</h2>
+            <p>
+              For private group requests or custom dates, send us your details and we will reply by email.
+            </p>
+            <div class="contact-badges">
+              <div class="mini">Reply within 24-48 hours</div>
+              <div class="mini">English support</div>
+              <div class="mini">Seoul based partners</div>
+            </div>
           </div>
+
+          <form class="contact-form" id="bookingForm" novalidate>
+            <div class="field-grid">
+              <label class="field">
+                <span>Full name</span>
+                <input name="name" type="text" autocomplete="name" required />
+              </label>
+
+              <label class="field">
+                <span>Email</span>
+                <input name="email" type="email" autocomplete="email" required />
+              </label>
+
+              <label class="field">
+                <span>Booking type</span>
+                <select name="type" required>
+                  <option value="">Select</option>
+                  <option>Individual</option>
+                  <option>Private group</option>
+                </select>
+              </label>
+
+              <label class="field">
+                <span>Group size</span>
+                <select name="size" required>
+                  <option value="">Select</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </label>
+
+              <label class="field field-wide">
+                <span>Preferred date</span>
+                <input name="date" type="date" required />
+              </label>
+
+              <label class="field field-wide">
+                <span>Message</span>
+                <textarea name="message" rows="4" placeholder="Any dietary needs, accessibility notes, or timing preferences?"></textarea>
+              </label>
+            </div>
+
+            <div class="form-actions">
+              <button class="btn btn-primary" type="submit">Send enquiry</button>
+              <a class="btn btn-ghost" href="mailto:hello@learncationkorea.com">Email directly</a>
+            </div>
+
+            <p class="form-help" id="formHelp" aria-live="polite"></p>
+          </form>
         </div>
       </div>
     </section>
 
-    <section id="faq" class="section alt">
-      <div class="container">
-        <h2>FAQ</h2>
-
-        <details>
-          <summary>Do I need any experience in cooking or dancing?</summary>
-          <p>No - everything is beginner-friendly and guided step by step.</p>
-        </details>
-
-        <details>
-          <summary>What language is the experience in?</summary>
-          <p>English-friendly throughout.</p>
-        </details>
-
-        <details>
-          <summary>Can I film during the K-pop class?</summary>
-          <p>Filming of facilities or staff may be restricted. You can usually record short personal clips of yourself, depending on on-site guidance.</p>
-        </details>
-
-        <details>
-          <summary>What if I have dietary restrictions?</summary>
-          <p>Message us in advance and we’ll do our best to accommodate.</p>
-        </details>
-      </div>
-    </section>
-
-    <section id="contact" class="section">
-      <div class="container">
-        <h2>Book or ask a question</h2>
-        <p class="muted">For now, you can take bookings via Airbnb, or message us for private groups and custom dates.</p>
-
-        <div class="contact-box">
-          <div>
-            <div class="contact-label">Email</div>
-            <div class="contact-value">support@learncationkorea.com</div>
-          </div>
-          <div>
-            <div class="contact-label">WhatsApp</div>
-            <div class="contact-value">Add your WhatsApp link here</div>
-          </div>
-          <div>
-            <div class="contact-label">Booking link</div>
-            <div class="contact-value">Paste your Airbnb experience link here</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
+    <!-- Footer -->
     <footer class="footer">
-      <div class="container footer-inner">
-        <div>© Learncation</div>
-        <div class="muted">Premium small-group Korean culture experiences</div>
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <h3>Learncation Korea</h3>
+            <p>Curated K-culture experiences in Seoul</p>
+          </div>
+
+          <div>
+            <h4>Contact</h4>
+            <a href="mailto:hello@learncationkorea.com">hello@learncationkorea.com</a>
+          </div>
+
+          <div>
+            <h4>Book with us</h4>
+            <a href="https://www.airbnb.com/experiences" target="_blank" rel="noopener noreferrer">Airbnb Experiences</a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">© 2026 Learncation Korea. All rights reserved.</div>
       </div>
     </footer>
   </main>
+
+  <script src="script.js" defer></script>
 </body>
 </html>
