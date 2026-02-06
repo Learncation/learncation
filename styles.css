@@ -494,3 +494,24 @@ html{scroll-behavior:smooth}
   .photo-float{position:static; width:100%; margin-top:12px;}
   .timeline-item{grid-template-columns: 92px 14px 1fr;}
 }
+
+.skip-link{
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skip-link:focus{
+  left: 16px;
+  top: 16px;
+  width: auto;
+  height: auto;
+  padding: 10px 14px;
+  background: #000;
+  color: #fff;
+  border-radius: 8px;
+  z-index: 1000;
+}
